@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(216, 216, 236);
+}
+
+#main_div {
+  width: fit-content;
+  height: 550px;
+  margin: auto;
+  padding: 50px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+#div2 {
+  box-shadow: 8px 8px 10px rgba(130, 125, 134, 0.493);
+  border-radius: 8px;
+  margin-left: 20px;
+  height: fit-content;
+  margin-left: 30px;
+  background-color: rgb(246, 247, 250);
+  padding: 50px;
+}
+
+#fb_title {
+  color: rgb(46, 76, 245);
+  font-size: 65px;
+  font-weight: bolder;
+  margin: 0;
+  text-decoration: none;
+}
+
+#page_title {
+  margin-top: -15px;
+  text-align: center;
+  color: rgba(37, 36, 36, 0.842);
+}
+
+input {
+  width: 265px;
+  height: 25px;
+  padding-left: 15px;
+}
+
+#btnL,
+#btnC {
+  height: 30px;
+  width: 285px;
+  padding: 7px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(46, 76, 245);
+}
+
+#btnC {
+  background-color: rgb(59, 202, 47);
+}

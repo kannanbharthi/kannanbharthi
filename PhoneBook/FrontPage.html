@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontPage</title>
+    <link rel="stylesheet" href="./phonebook.css" />
+  </head>
+  <body>
+    <div id="main" style="text-align: center">
+      <div id="div1">
+        <a href="./Login.html" id="fb_title">phonebook</a>
+        <p>
+          Phonebook helps you connect and share with the people in your life
+        </p>
+      </div>
+
+      <div id="div2" style="margin-left: -1px">
+        <h1 id="page_title">------ USER INFORMATION -------</h1>
+
+        <form>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="USERNAME"
+            required
+          /><br /><br />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+            required
+          /><br /><br />
+
+          <input
+            type="tel"
+            name="phNo"
+            id="phNo"
+            placeholder="PHONE NUMBER"
+            required
+          /><br /><br />
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="PASSWORD"
+            required
+          /><br /><br />
+
+          <input type="button" value="UPDATE" id="btnL" />
+        </form>
+        <br />
+
+        <div id="div3"></div>
+      </div>
+    </div>
+
+    <script src="./users.js"></script>
+    <script src="./FrontPage.js"></script>
+  </body>
+</html>

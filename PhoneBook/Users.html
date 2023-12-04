@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="./phonebook.css" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+
+      #main,
+      #div2 {
+        text-align: center;
+      }
+
+      #div2 {
+        margin: auto;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="div1">
+        <a href="./Login.html" id="fb_title">phonebook</a>
+        <p>
+          Phonebook helps you connect and share with the people in your life
+        </p>
+      </div>
+
+      <div id="div2"></div>
+    </div>
+    <script src="./users.js"></script>
+
+    <script>
+      const getRecords = () => {
+        const userList = getUserList();
+        let html = "";
+        userList.forEach((user) => {
+          html += `
+          <tr>
+            <td>${user.id}</td>
+            <td>${user.username}</td>
+            <td>${user.email}</td>
+            <td>${user.number}</td>
+            <td>${user.password}</td>
+          </tr> `;
+        });
+        return html;
+      };
+
+      document.getElementById("div2").innerHTML += `
+      <table>
+          <tr>
+            <th>ID</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>NUMBER</th>
+            <th>PASSWORD</th>
+          </tr>
+          ${getRecords()}
+      </table>`;
+    </script>
+  </body>
+</html>
